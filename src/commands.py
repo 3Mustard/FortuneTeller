@@ -94,6 +94,7 @@ def draw_three():
     if past_random == future_random or present_random == future_random: #checks if the future card is the same as the past or present card. If it is a new card is assigned to future.
         future_random = random.randint(1,78)
         print("Your future is the " + tarotdict.tarot[future_random] + " card.") #print future card
+
     if future_up_or_down == 1: #determines if the card is face up or down and prints the appropriate response.
         print("Your card is facing up and represents:")
         print(tarotdict.tarot_face_up[future_random])
@@ -106,6 +107,7 @@ def draw_three():
         print("Would you like to return to the main menu or see more information on a card?")
         print("1. More information\n0. Main menu")
         end_option = input("> ")
+
     if end_option == "1":
         card_info()
     if end_option == "0":
