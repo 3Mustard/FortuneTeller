@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarot Card Reading</title>
+    <!-- tells browser where the javascript file is located -->
+    <script src="{{ url_for('static', filename='tarot.js') }}"></script>
+    <!-- tells browser where the CSS file is located -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Heading -->
+    <h1 id="heading">Tarot Reading</h1>
+    <!-- Div that has cards dynamically inserted into it with the javascript functions -->
+     <div id="display"></div>
+    <!-- Button that calls the drawOne() function from the javascript file -->
+     <button onclick="drawOne()">Draw One</button>
+    <!-- Button that calls the drawThree() function from the javascript file -->
+     <button onclick="drawThree()">Draw Three</button>
+</body>
+</html>

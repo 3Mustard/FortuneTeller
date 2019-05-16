@@ -1,5 +1,5 @@
 import random
-import tarotdict
+from printversion import tarotdict
 
 
 def main_menu():
